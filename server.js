@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.json({ value: "11111111" });
     console.log(req, res);
+    res.json({ value: "11111111" });
 });
 
 app.post("/", (req, res) => {
-    res.json({ value: "11110000"});
     console.log(req, res);
+        res.json({ value: "11110000"});
 });
 
 app.listen(3000, () => {
