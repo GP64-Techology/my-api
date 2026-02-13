@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-    res.json({ value: "00000000"});
+    res.json({ value: "11110000"});
     console.log(req, res);
 });
 
