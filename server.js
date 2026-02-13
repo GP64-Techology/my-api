@@ -3,7 +3,12 @@ const app = express();
 
 app.get("/", (req, res) => {
     res.json({ value: "11111111" });
-    console.log(req, res)
+    console.log(req, res);
+});
+
+app.post("/", (req, res) => {
+    res.json({ value: "00000000"});
+    console.log(req, res);
 });
 
 app.listen(3000, () => {
